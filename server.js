@@ -40,9 +40,6 @@ app.get("/about", function(req, res){
 
 
 
-
-
-
 //_________________________________________________________________________________________________
 
 app.post("/results", function(req, res){
@@ -53,6 +50,6 @@ app.post("/results", function(req, res){
 //     res.render("results.hbs", {junk:"<b style='color: black;'>Name: </b>" + req.body.Name + "  " + "<b style='color: black;'>Email: </b>" + req.body.Email + "<br><br><b style='color: black;'>Comments: </b> " + req.body.Comments});
 // });
 
-const port = process.env.PORT || 80
+const port = process.env.PORT || 3000
 //use get to request and post for response
-app.listen(port, ()=>{console.log("Server running on port 3000")});
+app.listen(port, ()=>{console.log(`Server running on port ${port}`)});
